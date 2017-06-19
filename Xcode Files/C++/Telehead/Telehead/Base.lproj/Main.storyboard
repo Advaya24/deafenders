@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Telehead" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IS HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFd-Sk-8oX">
+                                <rect key="frame" x="133" y="170" width="334" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE NEXT TECH SENSATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-Rj-Cgb">
+                                <rect key="frame" x="133" y="170" width="334" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljF-78-pOn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
+                                <state key="normal" title=" FIND OUT ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hxs-uY-BKc" kind="show" id="fuW-fj-3fJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugk-47-vhj">
+                                <rect key="frame" x="248.5" y="280" width="104" height="40"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title=" FIND OUT ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hxs-uY-BKc" kind="show" id="prU-5t-zJr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE NEXT TECH SENSATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKW-oH-ncd">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IS HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuS-i2-myl">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSp-fq-jT2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title=" FIND OUT ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hxs-uY-BKc" kind="show" id="3L9-xe-kIj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IS HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oa8-Wc-yWR">
+                                <rect key="frame" x="255" y="213" width="89.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE NEXT TECH SENSATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaG-Yy-dY4">
+                                <rect key="frame" x="133" y="170" width="334" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BaG-Yy-dY4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2PB-UL-ugd"/>
+                            <constraint firstItem="bSp-fq-jT2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6kL-Te-3IB"/>
+                            <constraint firstItem="XKW-oH-ncd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ENt-5G-6xC"/>
+                            <constraint firstItem="BaG-Yy-dY4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="F4S-Ew-4XM"/>
+                            <constraint firstItem="ugk-47-vhj" firstAttribute="top" secondItem="Oa8-Wc-yWR" secondAttribute="bottom" constant="32" id="GWj-vv-U3l"/>
+                            <constraint firstItem="ljF-78-pOn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KTO-se-PuR"/>
+                            <constraint firstItem="Oa8-Wc-yWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qjh-7e-oOt"/>
+                            <constraint firstItem="ugk-47-vhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC0-nC-7qJ"/>
+                            <constraint firstItem="ljF-78-pOn" firstAttribute="top" secondItem="JFd-Sk-8oX" secondAttribute="bottom" constant="75" id="bpa-uO-3uA"/>
+                            <constraint firstItem="bSp-fq-jT2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fbe-KR-xk2"/>
+                            <constraint firstItem="Oa8-Wc-yWR" firstAttribute="top" secondItem="BaG-Yy-dY4" secondAttribute="bottom" constant="8" id="fxU-hu-6ay"/>
+                            <constraint firstItem="YuS-i2-myl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h8A-fo-0nP"/>
+                            <constraint firstItem="rp1-Rj-Cgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j6t-zs-N1P"/>
+                            <constraint firstItem="YuS-i2-myl" firstAttribute="top" secondItem="XKW-oH-ncd" secondAttribute="bottom" constant="8" id="lOC-tW-1If"/>
+                            <constraint firstItem="bSp-fq-jT2" firstAttribute="top" secondItem="YuS-i2-myl" secondAttribute="bottom" constant="50" id="m9X-04-4Kz"/>
+                            <constraint firstItem="JFd-Sk-8oX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ou0-2J-t7j"/>
+                            <constraint firstItem="rp1-Rj-Cgb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="pz8-qG-W3k"/>
+                            <constraint firstItem="JFd-Sk-8oX" firstAttribute="top" secondItem="rp1-Rj-Cgb" secondAttribute="bottom" constant="8" id="qh7-qL-FVi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JFd-Sk-8oX"/>
+                                <exclude reference="rp1-Rj-Cgb"/>
+                                <exclude reference="ljF-78-pOn"/>
+                                <exclude reference="ugk-47-vhj"/>
+                                <exclude reference="XKW-oH-ncd"/>
+                                <exclude reference="YuS-i2-myl"/>
+                                <exclude reference="bSp-fq-jT2"/>
+                                <exclude reference="Oa8-Wc-yWR"/>
+                                <exclude reference="BaG-Yy-dY4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6kL-Te-3IB"/>
+                                <exclude reference="fbe-KR-xk2"/>
+                                <exclude reference="m9X-04-4Kz"/>
+                                <exclude reference="KTO-se-PuR"/>
+                                <exclude reference="bpa-uO-3uA"/>
+                                <exclude reference="2PB-UL-ugd"/>
+                                <exclude reference="F4S-Ew-4XM"/>
+                                <exclude reference="ou0-2J-t7j"/>
+                                <exclude reference="qh7-qL-FVi"/>
+                                <exclude reference="j6t-zs-N1P"/>
+                                <exclude reference="pz8-qG-W3k"/>
+                                <exclude reference="Qjh-7e-oOt"/>
+                                <exclude reference="fxU-hu-6ay"/>
+                                <exclude reference="ENt-5G-6xC"/>
+                                <exclude reference="h8A-fo-0nP"/>
+                                <exclude reference="lOC-tW-1If"/>
+                                <exclude reference="GWj-vv-U3l"/>
+                                <exclude reference="VC0-nC-7qJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="ugk-47-vhj"/>
+                                <include reference="Oa8-Wc-yWR"/>
+                                <include reference="BaG-Yy-dY4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2PB-UL-ugd"/>
+                                <include reference="F4S-Ew-4XM"/>
+                                <include reference="Qjh-7e-oOt"/>
+                                <include reference="fxU-hu-6ay"/>
+                                <include reference="GWj-vv-U3l"/>
+                                <include reference="VC0-nC-7qJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="XKW-oH-ncd"/>
+                                <include reference="YuS-i2-myl"/>
+                                <include reference="bSp-fq-jT2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6kL-Te-3IB"/>
+                                <include reference="fbe-KR-xk2"/>
+                                <include reference="m9X-04-4Kz"/>
+                                <include reference="ENt-5G-6xC"/>
+                                <include reference="h8A-fo-0nP"/>
+                                <include reference="lOC-tW-1If"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="JFd-Sk-8oX"/>
+                                <include reference="rp1-Rj-Cgb"/>
+                                <include reference="ljF-78-pOn"/>
+                                <exclude reference="BaG-Yy-dY4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="KTO-se-PuR"/>
+                                <include reference="bpa-uO-3uA"/>
+                                <include reference="ou0-2J-t7j"/>
+                                <include reference="qh7-qL-FVi"/>
+                                <include reference="j6t-zs-N1P"/>
+                                <include reference="pz8-qG-W3k"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="474"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="C61-f4-mcl">
+            <objects>
+                <viewController id="hxs-uY-BKc" customClass="SecondViewController" customModule="Telehead" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="heA-A0-XB7"/>
+                        <viewControllerLayoutGuide type="bottom" id="tQw-oe-C2x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9EA-k7-cS1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAIT FOR IT..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnu-wd-gtm">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAIT FOR IT..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deM-Cb-86k">
+                                <rect key="frame" x="133" y="170" width="334" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jnu-wd-gtm" firstAttribute="centerX" secondItem="9EA-k7-cS1" secondAttribute="centerX" id="2NV-LF-PYY"/>
+                            <constraint firstItem="jnu-wd-gtm" firstAttribute="centerX" secondItem="9EA-k7-cS1" secondAttribute="centerX" id="9Wq-xv-aX9"/>
+                            <constraint firstItem="jnu-wd-gtm" firstAttribute="centerY" secondItem="9EA-k7-cS1" secondAttribute="centerY" id="DVu-kG-r0J"/>
+                            <constraint firstItem="deM-Cb-86k" firstAttribute="centerX" secondItem="9EA-k7-cS1" secondAttribute="centerX" id="Np9-Ce-LwA"/>
+                            <constraint firstItem="jnu-wd-gtm" firstAttribute="centerY" secondItem="9EA-k7-cS1" secondAttribute="centerY" id="sU8-0K-0dF"/>
+                            <constraint firstItem="deM-Cb-86k" firstAttribute="centerY" secondItem="9EA-k7-cS1" secondAttribute="centerY" id="xEV-xc-zTU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jnu-wd-gtm"/>
+                                <exclude reference="deM-Cb-86k"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Np9-Ce-LwA"/>
+                                <exclude reference="xEV-xc-zTU"/>
+                                <exclude reference="2NV-LF-PYY"/>
+                                <exclude reference="9Wq-xv-aX9"/>
+                                <exclude reference="DVu-kG-r0J"/>
+                                <exclude reference="sU8-0K-0dF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="jnu-wd-gtm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9Wq-xv-aX9"/>
+                                <include reference="sU8-0K-0dF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jnu-wd-gtm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2NV-LF-PYY"/>
+                                <include reference="DVu-kG-r0J"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="deM-Cb-86k"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Np9-Ce-LwA"/>
+                                <include reference="xEV-xc-zTU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="timerLabel" destination="deM-Cb-86k" id="Etc-GO-YbY"/>
+                        <segue destination="Bfz-qJ-CHL" kind="show" identifier="waitForIt" id="Eo9-88-pB0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ven-wl-isQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="474"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JtM-oI-0Nn">
+            <objects>
+                <viewController id="Bfz-qJ-CHL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9aU-PK-91P"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wwj-Xu-CI2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f7g-GD-UCD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITS THE TELEHEAD BY BOOLI, NUCLEUS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cz0-za-B3p">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Mq1-J4-PMM">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdq-Rc-7vB">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.90643652149999998" green="0.97407493680000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="So what is it?">
+                                            <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="2Go-cK-ddC" kind="show" id="SuR-r4-h4r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imp-dS-8Uu">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Why should I buy?">
+                                            <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fJj-3U-C73" kind="show" id="Pqx-p4-lt8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfT-I2-IgR">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.90643652149999998" green="0.97407493680000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Who made this?">
+                                            <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="GJo-nL-ebR" kind="show" id="Br6-YS-Pf0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE PRODUCT WE'VE ALL BEEN WAITING FOR" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zm7-a5-zxg">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE PRODUCT WE'VE ALL BEEN WAITING FOR" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTr-eb-gKT">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITS THE TELEHEAD BY BOOLI, NUCLEUS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YX-S6-Hcp">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jS8-lQ-1kv">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkk-Ng-IMI">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.90643652149999998" green="0.97407493680000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="  So what is it?">
+                                            <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="GJo-nL-ebR" kind="show" id="gRx-oU-PCa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-vj-WqW">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="  Why should I buy?">
+                                            <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fJj-3U-C73" kind="show" id="8uU-qH-uXc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-Nz-Tgt">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.90643652149999998" green="0.97407493680000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="  Who made this?">
+                                            <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="2Go-cK-ddC" kind="show" id="UfV-e7-8Q7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITS THE TELEHEAD BY BOOLI, NUCLEUS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfF-pI-4OB">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="n6I-ey-v8Z">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REs-v1-8jH">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.90643652149999998" green="0.97407493680000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                        <state key="normal" title="  So what is it?">
+                                            <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="2Go-cK-ddC" kind="show" id="7kf-go-htB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWx-xO-FJQ">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                        <state key="normal" title="  What's so special about it?">
+                                            <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fJj-3U-C73" kind="show" id="fNx-41-GIe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-RM-ebr">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.90643652149999998" green="0.97407493680000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                        <state key="normal" title="  Who made this?">
+                                            <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="GJo-nL-ebR" kind="show" id="Zrg-0m-wuA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE PRODUCT WE'VE ALL BEEN WAITING FOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx5-Zf-5uw">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mq1-J4-PMM" firstAttribute="top" secondItem="jx5-Zf-5uw" secondAttribute="bottom" constant="20" id="0Rx-vK-5jx"/>
+                            <constraint firstItem="Cz0-za-B3p" firstAttribute="top" secondItem="9aU-PK-91P" secondAttribute="bottom" constant="20" id="2aO-o0-fXN"/>
+                            <constraint firstItem="Wwj-Xu-CI2" firstAttribute="top" secondItem="n6I-ey-v8Z" secondAttribute="bottom" constant="20" id="5DE-oY-KtS"/>
+                            <constraint firstItem="CfF-pI-4OB" firstAttribute="leading" secondItem="f7g-GD-UCD" secondAttribute="leadingMargin" constant="20" id="7up-nN-1JR"/>
+                            <constraint firstItem="Wwj-Xu-CI2" firstAttribute="top" secondItem="jS8-lQ-1kv" secondAttribute="bottom" constant="170" id="A32-Lk-gZu"/>
+                            <constraint firstItem="9YX-S6-Hcp" firstAttribute="leading" secondItem="Zm7-a5-zxg" secondAttribute="leading" id="AEN-zc-S3D"/>
+                            <constraint firstItem="Zm7-a5-zxg" firstAttribute="top" secondItem="9YX-S6-Hcp" secondAttribute="bottom" constant="20" id="FQl-oK-ceV"/>
+                            <constraint firstItem="n6I-ey-v8Z" firstAttribute="leading" secondItem="f7g-GD-UCD" secondAttribute="leadingMargin" constant="20" id="Gar-Zf-kXt"/>
+                            <constraint firstItem="aTr-eb-gKT" firstAttribute="top" secondItem="CfF-pI-4OB" secondAttribute="bottom" constant="8" id="HdX-0i-ssG"/>
+                            <constraint firstItem="aTr-eb-gKT" firstAttribute="leading" secondItem="f7g-GD-UCD" secondAttribute="leadingMargin" constant="20" id="Jdu-lG-648"/>
+                            <constraint firstItem="jx5-Zf-5uw" firstAttribute="top" secondItem="Cz0-za-B3p" secondAttribute="bottom" constant="8" id="Tp6-X8-xSF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9YX-S6-Hcp" secondAttribute="trailing" id="YOa-UT-k0q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CfF-pI-4OB" secondAttribute="trailing" constant="50" id="ZBB-Mz-IuM"/>
+                            <constraint firstItem="Mq1-J4-PMM" firstAttribute="leading" secondItem="f7g-GD-UCD" secondAttribute="leadingMargin" constant="20" id="akK-U1-aXR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cz0-za-B3p" secondAttribute="trailing" constant="50" id="bBR-ta-pUS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mq1-J4-PMM" secondAttribute="trailing" constant="20" id="c9P-hJ-WDY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zm7-a5-zxg" secondAttribute="trailing" constant="20" id="cPJ-Wy-m2p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jx5-Zf-5uw" secondAttribute="trailing" constant="100" id="cp5-CO-VTZ"/>
+                            <constraint firstItem="9YX-S6-Hcp" firstAttribute="top" secondItem="9aU-PK-91P" secondAttribute="bottom" id="dLp-BK-wBf"/>
+                            <constraint firstItem="jx5-Zf-5uw" firstAttribute="leading" secondItem="f7g-GD-UCD" secondAttribute="leadingMargin" constant="20" id="enF-22-rdz"/>
+                            <constraint firstItem="9YX-S6-Hcp" firstAttribute="leading" secondItem="f7g-GD-UCD" secondAttribute="leadingMargin" id="fZi-vU-glj"/>
+                            <constraint firstItem="jS8-lQ-1kv" firstAttribute="top" secondItem="Zm7-a5-zxg" secondAttribute="bottom" constant="120" id="gTH-VS-RjV"/>
+                            <constraint firstItem="jS8-lQ-1kv" firstAttribute="leading" secondItem="f7g-GD-UCD" secondAttribute="leadingMargin" id="hLW-jn-U4h"/>
+                            <constraint firstItem="n6I-ey-v8Z" firstAttribute="top" secondItem="aTr-eb-gKT" secondAttribute="bottom" constant="100" id="hhS-Kh-mnJ"/>
+                            <constraint firstItem="CfF-pI-4OB" firstAttribute="top" secondItem="9aU-PK-91P" secondAttribute="bottom" constant="20" id="hpw-OP-irq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jS8-lQ-1kv" secondAttribute="trailing" id="mgF-Vi-1cq"/>
+                            <constraint firstItem="Wwj-Xu-CI2" firstAttribute="top" secondItem="Mq1-J4-PMM" secondAttribute="bottom" constant="20" id="ml8-bB-4f4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n6I-ey-v8Z" secondAttribute="trailing" constant="20" id="pDG-Hb-qwb"/>
+                            <constraint firstItem="Cz0-za-B3p" firstAttribute="leading" secondItem="f7g-GD-UCD" secondAttribute="leadingMargin" constant="20" id="rWR-Je-AM7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aTr-eb-gKT" secondAttribute="trailing" constant="150" id="ucT-OD-c51"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Cz0-za-B3p"/>
+                                <exclude reference="Mq1-J4-PMM"/>
+                                <exclude reference="Zm7-a5-zxg"/>
+                                <exclude reference="aTr-eb-gKT"/>
+                                <exclude reference="9YX-S6-Hcp"/>
+                                <exclude reference="jS8-lQ-1kv"/>
+                                <exclude reference="CfF-pI-4OB"/>
+                                <exclude reference="n6I-ey-v8Z"/>
+                                <exclude reference="jx5-Zf-5uw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5DE-oY-KtS"/>
+                                <exclude reference="A32-Lk-gZu"/>
+                                <exclude reference="ml8-bB-4f4"/>
+                                <exclude reference="AEN-zc-S3D"/>
+                                <exclude reference="YOa-UT-k0q"/>
+                                <exclude reference="dLp-BK-wBf"/>
+                                <exclude reference="fZi-vU-glj"/>
+                                <exclude reference="7up-nN-1JR"/>
+                                <exclude reference="ZBB-Mz-IuM"/>
+                                <exclude reference="hpw-OP-irq"/>
+                                <exclude reference="2aO-o0-fXN"/>
+                                <exclude reference="bBR-ta-pUS"/>
+                                <exclude reference="rWR-Je-AM7"/>
+                                <exclude reference="FQl-oK-ceV"/>
+                                <exclude reference="cPJ-Wy-m2p"/>
+                                <exclude reference="HdX-0i-ssG"/>
+                                <exclude reference="Jdu-lG-648"/>
+                                <exclude reference="ucT-OD-c51"/>
+                                <exclude reference="Tp6-X8-xSF"/>
+                                <exclude reference="cp5-CO-VTZ"/>
+                                <exclude reference="enF-22-rdz"/>
+                                <exclude reference="0Rx-vK-5jx"/>
+                                <exclude reference="akK-U1-aXR"/>
+                                <exclude reference="c9P-hJ-WDY"/>
+                                <exclude reference="gTH-VS-RjV"/>
+                                <exclude reference="hLW-jn-U4h"/>
+                                <exclude reference="mgF-Vi-1cq"/>
+                                <exclude reference="Gar-Zf-kXt"/>
+                                <exclude reference="hhS-Kh-mnJ"/>
+                                <exclude reference="pDG-Hb-qwb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="Cz0-za-B3p"/>
+                                <include reference="Mq1-J4-PMM"/>
+                                <include reference="jx5-Zf-5uw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ml8-bB-4f4"/>
+                                <include reference="2aO-o0-fXN"/>
+                                <include reference="bBR-ta-pUS"/>
+                                <include reference="rWR-Je-AM7"/>
+                                <include reference="Tp6-X8-xSF"/>
+                                <include reference="cp5-CO-VTZ"/>
+                                <include reference="enF-22-rdz"/>
+                                <include reference="0Rx-vK-5jx"/>
+                                <include reference="akK-U1-aXR"/>
+                                <include reference="c9P-hJ-WDY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Zm7-a5-zxg"/>
+                                <include reference="9YX-S6-Hcp"/>
+                                <include reference="jS8-lQ-1kv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="A32-Lk-gZu"/>
+                                <include reference="AEN-zc-S3D"/>
+                                <include reference="YOa-UT-k0q"/>
+                                <include reference="dLp-BK-wBf"/>
+                                <include reference="fZi-vU-glj"/>
+                                <include reference="FQl-oK-ceV"/>
+                                <include reference="cPJ-Wy-m2p"/>
+                                <include reference="gTH-VS-RjV"/>
+                                <include reference="hLW-jn-U4h"/>
+                                <include reference="mgF-Vi-1cq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="aTr-eb-gKT"/>
+                                <include reference="CfF-pI-4OB"/>
+                                <include reference="n6I-ey-v8Z"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5DE-oY-KtS"/>
+                                <include reference="7up-nN-1JR"/>
+                                <include reference="ZBB-Mz-IuM"/>
+                                <include reference="hpw-OP-irq"/>
+                                <include reference="HdX-0i-ssG"/>
+                                <include reference="Jdu-lG-648"/>
+                                <include reference="ucT-OD-c51"/>
+                                <include reference="Gar-Zf-kXt"/>
+                                <include reference="hhS-Kh-mnJ"/>
+                                <include reference="pDG-Hb-qwb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abk-Ob-1kw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="474"/>
+        </scene>
+        <!--Dismiss Modal View Controller-->
+        <scene sceneID="drM-Pi-cQ4">
+            <objects>
+                <viewController id="GJo-nL-ebR" customClass="DismissModalViewController" customModule="Telehead" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tSI-dS-sWk"/>
+                        <viewControllerLayoutGuide type="bottom" id="bF4-5g-lCB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="83J-70-LM5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjx-9W-jNB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dismiss" id="AxV-3E-TOW">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="GJo-nL-ebR" id="Ude-fW-AhX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE FUTURE OF AR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-WD-iAR">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Vh-rI-nOZ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The Telehead was created by the finest minds of this planet, led by the genius entrepreneur Bavin Gelson. With his expertise, Booli has achieved a turnover of more than $33 Billion.
+
+
+Booli is the new black for gadgets and gizmos.</string>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE GREATEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7j-1n-HzO">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eph-Y4-20m">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dismiss" id="apu-xY-5ar">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="GJo-nL-ebR" id="rIM-SS-RYt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wTq-Lk-4Wu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The Telehead was created by the finest minds of this planet, led by the genius entrepreneur Bavin Gelson. With his expertise, Booli has achieved a turnover of more than $33 Billion.
+
+
+Booli is the new black for gadgets and gizmos.</string>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE GREATEST" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZA-X2-flV">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="35"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jfO-d3-7zG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">
+The Telehead provides you with the most life-like Augmented Reality experience. Now two people living in opposite corners of the world can talk to each other like they do face-to-face.
+
+The Telehead uses the new Holoreality Hologram Technology which enables it to project the user's hologram in life size with high accuracy.
+
+So high the accuracy, that it is impossible to distinguish between a person and a Telehead hologram.
+
+Oh, and the high accuracy won't make you compromise with speed. Booli's new compression technology allows the Telehead to highly compress files, enabling it to transfer data within fractions of a second. It works quicker than the average video calling service.
+
+It teleports you to where you want to be. Its true now. The world really is a small place.</string>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Vh-rI-nOZ" firstAttribute="top" secondItem="6ZA-X2-flV" secondAttribute="bottom" constant="20" id="07v-p7-8ui"/>
+                            <constraint firstItem="4Vh-rI-nOZ" firstAttribute="centerY" secondItem="83J-70-LM5" secondAttribute="centerY" id="0h5-UQ-KKB"/>
+                            <constraint firstItem="xjx-9W-jNB" firstAttribute="leading" secondItem="83J-70-LM5" secondAttribute="leading" id="1Pd-Ee-dEn"/>
+                            <constraint firstItem="wTq-Lk-4Wu" firstAttribute="centerY" secondItem="83J-70-LM5" secondAttribute="centerY" id="2Gw-rU-cw4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mAQ-WD-iAR" secondAttribute="trailing" constant="50" id="37T-OH-5KP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xjx-9W-jNB" secondAttribute="trailing" constant="-20" id="55S-6m-Ahi"/>
+                            <constraint firstItem="mAQ-WD-iAR" firstAttribute="leading" secondItem="83J-70-LM5" secondAttribute="leadingMargin" id="75g-GW-Et4"/>
+                            <constraint firstItem="6ZA-X2-flV" firstAttribute="leading" secondItem="83J-70-LM5" secondAttribute="leadingMargin" id="7XL-Uw-Bnz"/>
+                            <constraint firstItem="jfO-d3-7zG" firstAttribute="centerY" secondItem="83J-70-LM5" secondAttribute="centerY" id="7eB-Qh-gTP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="eph-Y4-20m" secondAttribute="bottom" id="AJL-nJ-m6h"/>
+                            <constraint firstItem="eph-Y4-20m" firstAttribute="leading" secondItem="83J-70-LM5" secondAttribute="leadingMargin" constant="-20" id="BAM-pw-X98"/>
+                            <constraint firstItem="bF4-5g-lCB" firstAttribute="top" secondItem="xjx-9W-jNB" secondAttribute="bottom" id="FkE-mO-7VW"/>
+                            <constraint firstItem="wTq-Lk-4Wu" firstAttribute="top" secondItem="K7j-1n-HzO" secondAttribute="bottom" constant="10" id="HF2-IR-FVI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jfO-d3-7zG" secondAttribute="trailing" id="IgR-rN-7ZB"/>
+                            <constraint firstItem="jfO-d3-7zG" firstAttribute="leading" secondItem="83J-70-LM5" secondAttribute="leadingMargin" id="Lza-fM-X6A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Vh-rI-nOZ" secondAttribute="trailing" id="MM6-Os-J9A"/>
+                            <constraint firstItem="mAQ-WD-iAR" firstAttribute="top" secondItem="tSI-dS-sWk" secondAttribute="bottom" id="MiW-39-qgO"/>
+                            <constraint firstItem="6ZA-X2-flV" firstAttribute="top" secondItem="tSI-dS-sWk" secondAttribute="bottom" id="My3-v1-1B8"/>
+                            <constraint firstItem="xjx-9W-jNB" firstAttribute="centerX" secondItem="83J-70-LM5" secondAttribute="centerX" id="NsP-tT-fnE"/>
+                            <constraint firstItem="K7j-1n-HzO" firstAttribute="leading" secondItem="83J-70-LM5" secondAttribute="leadingMargin" id="QyN-Ve-4sd"/>
+                            <constraint firstItem="bF4-5g-lCB" firstAttribute="top" secondItem="4Vh-rI-nOZ" secondAttribute="bottom" constant="132" id="S6h-4a-eXL"/>
+                            <constraint firstItem="jfO-d3-7zG" firstAttribute="top" secondItem="mAQ-WD-iAR" secondAttribute="bottom" constant="10" id="UAj-rM-8WZ"/>
+                            <constraint firstItem="wTq-Lk-4Wu" firstAttribute="leading" secondItem="83J-70-LM5" secondAttribute="leadingMargin" id="WN7-v6-EGe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eph-Y4-20m" secondAttribute="trailing" constant="-20" id="Xqq-fn-yy8"/>
+                            <constraint firstItem="4Vh-rI-nOZ" firstAttribute="leading" secondItem="83J-70-LM5" secondAttribute="leadingMargin" id="ZyZ-qo-PDK"/>
+                            <constraint firstItem="bF4-5g-lCB" firstAttribute="top" secondItem="xjx-9W-jNB" secondAttribute="bottom" id="b0a-c6-wYR"/>
+                            <constraint firstItem="wTq-Lk-4Wu" firstAttribute="trailing" secondItem="83J-70-LM5" secondAttribute="trailingMargin" id="eMD-C1-Gla"/>
+                            <constraint firstItem="K7j-1n-HzO" firstAttribute="top" secondItem="tSI-dS-sWk" secondAttribute="bottom" id="fsi-Ha-AhE"/>
+                            <constraint firstItem="xjx-9W-jNB" firstAttribute="centerX" secondItem="83J-70-LM5" secondAttribute="centerX" id="kjM-UC-b8G"/>
+                            <constraint firstItem="jfO-d3-7zG" firstAttribute="top" secondItem="mAQ-WD-iAR" secondAttribute="bottom" constant="50" id="u7T-MT-epa"/>
+                            <constraint firstItem="xjx-9W-jNB" firstAttribute="leading" secondItem="83J-70-LM5" secondAttribute="leadingMargin" constant="-20" id="vu0-Ar-Wu1"/>
+                            <constraint firstItem="bF4-5g-lCB" firstAttribute="top" secondItem="jfO-d3-7zG" secondAttribute="bottom" constant="50" id="yOu-k1-SSL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xjx-9W-jNB"/>
+                                <exclude reference="mAQ-WD-iAR"/>
+                                <exclude reference="4Vh-rI-nOZ"/>
+                                <exclude reference="K7j-1n-HzO"/>
+                                <exclude reference="eph-Y4-20m"/>
+                                <exclude reference="wTq-Lk-4Wu"/>
+                                <exclude reference="6ZA-X2-flV"/>
+                                <exclude reference="jfO-d3-7zG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FkE-mO-7VW"/>
+                                <exclude reference="S6h-4a-eXL"/>
+                                <exclude reference="b0a-c6-wYR"/>
+                                <exclude reference="yOu-k1-SSL"/>
+                                <exclude reference="AJL-nJ-m6h"/>
+                                <exclude reference="BAM-pw-X98"/>
+                                <exclude reference="Xqq-fn-yy8"/>
+                                <exclude reference="1Pd-Ee-dEn"/>
+                                <exclude reference="55S-6m-Ahi"/>
+                                <exclude reference="NsP-tT-fnE"/>
+                                <exclude reference="kjM-UC-b8G"/>
+                                <exclude reference="vu0-Ar-Wu1"/>
+                                <exclude reference="07v-p7-8ui"/>
+                                <exclude reference="0h5-UQ-KKB"/>
+                                <exclude reference="MM6-Os-J9A"/>
+                                <exclude reference="ZyZ-qo-PDK"/>
+                                <exclude reference="7eB-Qh-gTP"/>
+                                <exclude reference="IgR-rN-7ZB"/>
+                                <exclude reference="Lza-fM-X6A"/>
+                                <exclude reference="UAj-rM-8WZ"/>
+                                <exclude reference="u7T-MT-epa"/>
+                                <exclude reference="2Gw-rU-cw4"/>
+                                <exclude reference="HF2-IR-FVI"/>
+                                <exclude reference="WN7-v6-EGe"/>
+                                <exclude reference="eMD-C1-Gla"/>
+                                <exclude reference="7XL-Uw-Bnz"/>
+                                <exclude reference="My3-v1-1B8"/>
+                                <exclude reference="QyN-Ve-4sd"/>
+                                <exclude reference="fsi-Ha-AhE"/>
+                                <exclude reference="37T-OH-5KP"/>
+                                <exclude reference="75g-GW-Et4"/>
+                                <exclude reference="MiW-39-qgO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="xjx-9W-jNB"/>
+                                <exclude reference="mAQ-WD-iAR"/>
+                                <include reference="K7j-1n-HzO"/>
+                                <include reference="eph-Y4-20m"/>
+                                <include reference="wTq-Lk-4Wu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="AJL-nJ-m6h"/>
+                                <include reference="BAM-pw-X98"/>
+                                <include reference="Xqq-fn-yy8"/>
+                                <include reference="2Gw-rU-cw4"/>
+                                <include reference="HF2-IR-FVI"/>
+                                <include reference="WN7-v6-EGe"/>
+                                <include reference="eMD-C1-Gla"/>
+                                <include reference="QyN-Ve-4sd"/>
+                                <include reference="fsi-Ha-AhE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xjx-9W-jNB"/>
+                                <include reference="mAQ-WD-iAR"/>
+                                <include reference="jfO-d3-7zG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="b0a-c6-wYR"/>
+                                <include reference="yOu-k1-SSL"/>
+                                <include reference="1Pd-Ee-dEn"/>
+                                <include reference="kjM-UC-b8G"/>
+                                <include reference="7eB-Qh-gTP"/>
+                                <include reference="IgR-rN-7ZB"/>
+                                <include reference="Lza-fM-X6A"/>
+                                <include reference="UAj-rM-8WZ"/>
+                                <exclude reference="u7T-MT-epa"/>
+                                <include reference="37T-OH-5KP"/>
+                                <include reference="75g-GW-Et4"/>
+                                <include reference="MiW-39-qgO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="xjx-9W-jNB"/>
+                                <include reference="4Vh-rI-nOZ"/>
+                                <include reference="6ZA-X2-flV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FkE-mO-7VW"/>
+                                <include reference="S6h-4a-eXL"/>
+                                <include reference="55S-6m-Ahi"/>
+                                <include reference="NsP-tT-fnE"/>
+                                <include reference="vu0-Ar-Wu1"/>
+                                <include reference="07v-p7-8ui"/>
+                                <include reference="0h5-UQ-KKB"/>
+                                <include reference="MM6-Os-J9A"/>
+                                <include reference="ZyZ-qo-PDK"/>
+                                <include reference="7XL-Uw-Bnz"/>
+                                <include reference="My3-v1-1B8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="apu-xY-5ar" id="pYL-P3-GWe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ec-ch-UQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150" y="1602"/>
+        </scene>
+        <!--Dismiss Modal View Controller-->
+        <scene sceneID="FHj-aE-4FY">
+            <objects>
+                <viewController id="fJj-3U-C73" customClass="DismissModalViewController" customModule="Telehead" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eeL-eS-7Ho"/>
+                        <viewControllerLayoutGuide type="bottom" id="pcU-oN-6Vf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IHw-gK-UmR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE PERSONAL TOUCH" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SZ-vX-9VA">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFH-nv-INz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dismiss" id="sPo-fK-tA3">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="fJj-3U-C73" id="JA8-Wo-YXP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE PERSONAL TOUCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv7-Zd-Cd2">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aB4-ao-VvS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dismiss" id="MJr-nS-Q7q">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="fJj-3U-C73" id="CH8-Jp-KdQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eBn-dy-xnL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Experience the personal touch of being there.
+
+The Telehead can be used by almost anyone. No prior experience with AR required.
+
+It can also be used almost everywhere. So the Telehead is not only useful for professional meetings, but for any interaction.
+
+Living away from your family? Now you have them in your living room. Music jamming session? No problem!
+
+What more could you ask for?</string>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yFs-r0-Uil">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Experience the personal touch of being therre.
+
+The Telehead can be used by almost anyone. No prior experience with AR required.
+
+It can also be used almost everywhere. So the Telehead is not only useful for professional meetings, but for any interaction.
+
+Living away from your family? Now you have them in your living room. Music jamming session? No problem!
+
+What more could you ask for?</string>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE PERSONAL TOUCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knx-56-bCL">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="35"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVp-GK-Bs2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dismiss" id="WCg-A5-1AS">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="fJj-3U-C73" id="fPZ-og-JUH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i66-gT-8wu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Experience the personal touch of being therre.
+
+The Telehead can be used by almost anyone. No prior experience with AR required.
+
+It can also be used almost everywhere. So the Telehead is not only useful for professional meetings, but for any interaction.
+
+Living away from your family? Now you have them in your living room. Music jamming session? No problem!
+
+What more could you ask for?</string>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="jVp-GK-Bs2" secondAttribute="trailing" constant="-20" id="0XK-RY-c9N"/>
+                            <constraint firstItem="eBn-dy-xnL" firstAttribute="trailing" secondItem="IHw-gK-UmR" secondAttribute="trailingMargin" id="2MB-Oh-166"/>
+                            <constraint firstItem="knx-56-bCL" firstAttribute="top" secondItem="eeL-eS-7Ho" secondAttribute="bottom" id="69f-HD-1vE"/>
+                            <constraint firstItem="eBn-dy-xnL" firstAttribute="centerY" secondItem="IHw-gK-UmR" secondAttribute="centerY" id="984-EC-Fcg"/>
+                            <constraint firstItem="pcU-oN-6Vf" firstAttribute="top" secondItem="jVp-GK-Bs2" secondAttribute="bottom" id="9D2-IN-iXz"/>
+                            <constraint firstItem="pcU-oN-6Vf" firstAttribute="top" secondItem="i66-gT-8wu" secondAttribute="bottom" constant="100" id="9Ds-wc-nAG"/>
+                            <constraint firstItem="9SZ-vX-9VA" firstAttribute="leading" secondItem="IHw-gK-UmR" secondAttribute="leadingMargin" id="BfQ-Oa-cpD"/>
+                            <constraint firstItem="knx-56-bCL" firstAttribute="leading" secondItem="IHw-gK-UmR" secondAttribute="leadingMargin" id="EaK-1V-184"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yFs-r0-Uil" secondAttribute="trailing" constant="12" id="GDt-wp-dgq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i66-gT-8wu" secondAttribute="trailing" id="Na8-IB-mMD"/>
+                            <constraint firstItem="yFs-r0-Uil" firstAttribute="centerY" secondItem="IHw-gK-UmR" secondAttribute="centerY" id="OFb-D3-h2I"/>
+                            <constraint firstItem="rFH-nv-INz" firstAttribute="top" secondItem="yFs-r0-Uil" secondAttribute="bottom" constant="50" id="R8M-52-IG3"/>
+                            <constraint firstItem="eBn-dy-xnL" firstAttribute="top" secondItem="Hv7-Zd-Cd2" secondAttribute="bottom" constant="10" id="T3S-WE-yDQ"/>
+                            <constraint firstItem="i66-gT-8wu" firstAttribute="leading" secondItem="IHw-gK-UmR" secondAttribute="leadingMargin" id="Tdv-bJ-3jM"/>
+                            <constraint firstItem="eBn-dy-xnL" firstAttribute="leading" secondItem="IHw-gK-UmR" secondAttribute="leadingMargin" id="U7P-zp-lrP"/>
+                            <constraint firstItem="rFH-nv-INz" firstAttribute="leading" secondItem="IHw-gK-UmR" secondAttribute="leading" id="X7s-ui-7Kk"/>
+                            <constraint firstItem="pcU-oN-6Vf" firstAttribute="top" secondItem="aB4-ao-VvS" secondAttribute="bottom" id="XAy-Og-yF3"/>
+                            <constraint firstItem="i66-gT-8wu" firstAttribute="centerY" secondItem="IHw-gK-UmR" secondAttribute="centerY" id="XCh-O2-fid"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aB4-ao-VvS" secondAttribute="trailing" constant="-20" id="ZYi-Ri-Y82"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9SZ-vX-9VA" secondAttribute="trailing" constant="50" id="Znk-9R-xB7"/>
+                            <constraint firstItem="Hv7-Zd-Cd2" firstAttribute="top" secondItem="eeL-eS-7Ho" secondAttribute="bottom" id="ah5-FH-HI2"/>
+                            <constraint firstItem="Hv7-Zd-Cd2" firstAttribute="leading" secondItem="IHw-gK-UmR" secondAttribute="leadingMargin" id="fXN-fh-QcS"/>
+                            <constraint firstItem="9SZ-vX-9VA" firstAttribute="top" secondItem="eeL-eS-7Ho" secondAttribute="bottom" id="iok-3g-EK6"/>
+                            <constraint firstItem="yFs-r0-Uil" firstAttribute="top" secondItem="9SZ-vX-9VA" secondAttribute="bottom" constant="50" id="mq8-kV-XcV"/>
+                            <constraint firstItem="rFH-nv-INz" firstAttribute="centerX" secondItem="IHw-gK-UmR" secondAttribute="centerX" id="nCF-l5-EqW"/>
+                            <constraint firstItem="aB4-ao-VvS" firstAttribute="leading" secondItem="IHw-gK-UmR" secondAttribute="leadingMargin" constant="-20" id="q5G-Il-xmU"/>
+                            <constraint firstItem="jVp-GK-Bs2" firstAttribute="leading" secondItem="IHw-gK-UmR" secondAttribute="leadingMargin" constant="-20" id="rQQ-Nm-0Nj"/>
+                            <constraint firstItem="yFs-r0-Uil" firstAttribute="leading" secondItem="IHw-gK-UmR" secondAttribute="leadingMargin" id="sm4-PU-Evt"/>
+                            <constraint firstItem="pcU-oN-6Vf" firstAttribute="top" secondItem="rFH-nv-INz" secondAttribute="bottom" id="w97-QI-LSh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9SZ-vX-9VA"/>
+                                <exclude reference="rFH-nv-INz"/>
+                                <exclude reference="Hv7-Zd-Cd2"/>
+                                <exclude reference="aB4-ao-VvS"/>
+                                <exclude reference="eBn-dy-xnL"/>
+                                <exclude reference="yFs-r0-Uil"/>
+                                <exclude reference="knx-56-bCL"/>
+                                <exclude reference="jVp-GK-Bs2"/>
+                                <exclude reference="i66-gT-8wu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9D2-IN-iXz"/>
+                                <exclude reference="9Ds-wc-nAG"/>
+                                <exclude reference="XAy-Og-yF3"/>
+                                <exclude reference="w97-QI-LSh"/>
+                                <exclude reference="ZYi-Ri-Y82"/>
+                                <exclude reference="q5G-Il-xmU"/>
+                                <exclude reference="0XK-RY-c9N"/>
+                                <exclude reference="rQQ-Nm-0Nj"/>
+                                <exclude reference="R8M-52-IG3"/>
+                                <exclude reference="X7s-ui-7Kk"/>
+                                <exclude reference="nCF-l5-EqW"/>
+                                <exclude reference="2MB-Oh-166"/>
+                                <exclude reference="984-EC-Fcg"/>
+                                <exclude reference="T3S-WE-yDQ"/>
+                                <exclude reference="U7P-zp-lrP"/>
+                                <exclude reference="Na8-IB-mMD"/>
+                                <exclude reference="Tdv-bJ-3jM"/>
+                                <exclude reference="XCh-O2-fid"/>
+                                <exclude reference="GDt-wp-dgq"/>
+                                <exclude reference="OFb-D3-h2I"/>
+                                <exclude reference="mq8-kV-XcV"/>
+                                <exclude reference="sm4-PU-Evt"/>
+                                <exclude reference="BfQ-Oa-cpD"/>
+                                <exclude reference="Znk-9R-xB7"/>
+                                <exclude reference="iok-3g-EK6"/>
+                                <exclude reference="ah5-FH-HI2"/>
+                                <exclude reference="fXN-fh-QcS"/>
+                                <exclude reference="69f-HD-1vE"/>
+                                <exclude reference="EaK-1V-184"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="Hv7-Zd-Cd2"/>
+                                <include reference="aB4-ao-VvS"/>
+                                <include reference="eBn-dy-xnL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="XAy-Og-yF3"/>
+                                <include reference="ZYi-Ri-Y82"/>
+                                <include reference="q5G-Il-xmU"/>
+                                <include reference="2MB-Oh-166"/>
+                                <include reference="984-EC-Fcg"/>
+                                <include reference="T3S-WE-yDQ"/>
+                                <include reference="U7P-zp-lrP"/>
+                                <include reference="ah5-FH-HI2"/>
+                                <include reference="fXN-fh-QcS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9SZ-vX-9VA"/>
+                                <include reference="rFH-nv-INz"/>
+                                <include reference="yFs-r0-Uil"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="w97-QI-LSh"/>
+                                <include reference="R8M-52-IG3"/>
+                                <include reference="X7s-ui-7Kk"/>
+                                <include reference="nCF-l5-EqW"/>
+                                <include reference="GDt-wp-dgq"/>
+                                <include reference="OFb-D3-h2I"/>
+                                <include reference="mq8-kV-XcV"/>
+                                <include reference="sm4-PU-Evt"/>
+                                <include reference="BfQ-Oa-cpD"/>
+                                <include reference="Znk-9R-xB7"/>
+                                <include reference="iok-3g-EK6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="knx-56-bCL"/>
+                                <include reference="jVp-GK-Bs2"/>
+                                <include reference="i66-gT-8wu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9D2-IN-iXz"/>
+                                <include reference="9Ds-wc-nAG"/>
+                                <include reference="0XK-RY-c9N"/>
+                                <include reference="rQQ-Nm-0Nj"/>
+                                <include reference="Na8-IB-mMD"/>
+                                <include reference="Tdv-bJ-3jM"/>
+                                <include reference="XCh-O2-fid"/>
+                                <include reference="69f-HD-1vE"/>
+                                <include reference="EaK-1V-184"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="MJr-nS-Q7q" id="0Ou-Hd-IwF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcX-Oz-gTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556" y="474"/>
+        </scene>
+        <!--Dismiss Modal View Controller-->
+        <scene sceneID="RW2-9U-rpD">
+            <objects>
+                <viewController id="2Go-cK-ddC" customClass="DismissModalViewController" customModule="Telehead" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CBj-MZ-0hX"/>
+                        <viewControllerLayoutGuide type="bottom" id="wA7-Li-WjB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OXo-Cv-7jH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mm5-zH-TjV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dismiss" id="Wuk-IU-L4y">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="2Go-cK-ddC" id="MbK-9P-yUI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE FUTURE OF AR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLS-Dh-n2v">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="35"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAq-yB-RqG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dismiss" id="Ji0-n9-zQF">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="2Go-cK-ddC" id="pdl-Qi-GVk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2o-Fb-DzS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dismiss" id="s67-1c-6c2">
+                                        <connections>
+                                            <action selector="doDismiss:" destination="2Go-cK-ddC" id="NZg-At-9Td"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rEs-Ac-VY9">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="BhS-dq-hGx"/>
+                                </constraints>
+                                <string key="text">
+The Telehead provides you with the most life-like Augmented Reality experience. Now two people living in opposite corners of the world can talk to each other like they do face-to-face.
+
+The Telehead uses the new Holoreality Hologram Technology which enables it to project the user's hologram in life size with high accuracy.
+
+So high the accuracy, that it is impossible to distinguish between a person and a Telehead hologram.
+
+Oh, and the high accuracy won't make you compromise with speed. Booli's new compression technology allows the Telehead to highly compress files, enabling it to transfer data within fractions of a second. It works quicker than the average video calling service.
+
+It teleports you to where you want to be. 
+
+Its true now. The world really is a small place.</string>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BhS-dq-hGx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="BhS-dq-hGx"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE FUTURE OF AR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFY-bA-k2F">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hcd-eJ-6n7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">
+The Telehead provides you with the most life-like Augmented Reality experience. Now two people living in opposite corners of the world can talk to each other like they do face-to-face.
+
+The Telehead uses the new Holoreality Hologram Technology which enables it to project the user's hologram in life size with high accuracy.
+
+So high the accuracy, that it is impossible to distinguish between a person and a Telehead hologram.
+
+Oh, and the high accuracy won't make you compromise with speed. Booli's new compression technology allows the Telehead to highly compress files, enabling it to transfer data within fractions of a second. It works quicker than the average video calling service.
+
+It teleports you to where you want to be. Its true now. The world really is a small place.</string>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE GREATEST" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbz-yZ-5wT">
+                                <rect key="frame" x="219" y="282" width="163" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mAC-mI-rtB">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The Telehead was created by the finest minds of this planet, led by the genius entrepreneur Bavin Gelson. With his expertise, Booli has achieved a turnover of more than $33 Billion.
+
+
+Booli is the new black for gadgets and gizmos.</string>
+                                <color key="textColor" red="0.039215686270000001" green="0.32156862749999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rEs-Ac-VY9" firstAttribute="centerY" secondItem="OXo-Cv-7jH" secondAttribute="centerY" id="0TG-pG-WFk"/>
+                            <constraint firstItem="Lbz-yZ-5wT" firstAttribute="leading" secondItem="OXo-Cv-7jH" secondAttribute="leadingMargin" id="0XF-TW-Zxg"/>
+                            <constraint firstItem="mAC-mI-rtB" firstAttribute="leading" secondItem="OXo-Cv-7jH" secondAttribute="leadingMargin" id="C4e-Eg-beF"/>
+                            <constraint firstItem="D2o-Fb-DzS" firstAttribute="top" secondItem="mAC-mI-rtB" secondAttribute="bottom" constant="100" id="Edf-gO-bpg"/>
+                            <constraint firstItem="hcd-eJ-6n7" firstAttribute="centerY" secondItem="OXo-Cv-7jH" secondAttribute="centerY" id="HQk-l6-sdB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hcd-eJ-6n7" secondAttribute="trailing" id="Hrz-xa-nql"/>
+                            <constraint firstItem="lAq-yB-RqG" firstAttribute="leading" secondItem="OXo-Cv-7jH" secondAttribute="leadingMargin" constant="-20" id="I5g-VT-J3j"/>
+                            <constraint firstItem="jFY-bA-k2F" firstAttribute="top" secondItem="CBj-MZ-0hX" secondAttribute="bottom" id="Lnq-Po-TSw"/>
+                            <constraint firstItem="rEs-Ac-VY9" firstAttribute="leading" secondItem="OXo-Cv-7jH" secondAttribute="leadingMargin" id="Nem-GT-OKt"/>
+                            <constraint firstItem="KLS-Dh-n2v" firstAttribute="leading" secondItem="OXo-Cv-7jH" secondAttribute="leadingMargin" id="QAZ-2U-v6b"/>
+                            <constraint firstItem="wA7-Li-WjB" firstAttribute="top" secondItem="Mm5-zH-TjV" secondAttribute="bottom" id="Rja-5C-0XC"/>
+                            <constraint firstItem="Mm5-zH-TjV" firstAttribute="leading" secondItem="OXo-Cv-7jH" secondAttribute="leadingMargin" constant="-20" id="T8Y-dT-9v7"/>
+                            <constraint firstItem="wA7-Li-WjB" firstAttribute="top" secondItem="lAq-yB-RqG" secondAttribute="bottom" id="TyX-3d-4G8"/>
+                            <constraint firstItem="hcd-eJ-6n7" firstAttribute="leading" secondItem="OXo-Cv-7jH" secondAttribute="leadingMargin" id="WoG-k0-OMi"/>
+                            <constraint firstItem="rEs-Ac-VY9" firstAttribute="trailing" secondItem="OXo-Cv-7jH" secondAttribute="trailingMargin" id="ZVJ-YY-Kgd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mAC-mI-rtB" secondAttribute="trailing" constant="12" id="cC6-Oc-PdU"/>
+                            <constraint firstItem="D2o-Fb-DzS" firstAttribute="centerX" secondItem="OXo-Cv-7jH" secondAttribute="centerX" id="eok-MU-3ca"/>
+                            <constraint firstItem="hcd-eJ-6n7" firstAttribute="top" secondItem="jFY-bA-k2F" secondAttribute="bottom" constant="10" id="gPf-uU-pJr"/>
+                            <constraint firstItem="Lbz-yZ-5wT" firstAttribute="top" secondItem="CBj-MZ-0hX" secondAttribute="bottom" id="gek-BU-adK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lbz-yZ-5wT" secondAttribute="trailing" constant="50" id="hxV-7q-Vye"/>
+                            <constraint firstItem="mAC-mI-rtB" firstAttribute="top" secondItem="Lbz-yZ-5wT" secondAttribute="bottom" constant="50" id="kmx-dK-ZLK"/>
+                            <constraint firstItem="mAC-mI-rtB" firstAttribute="centerY" secondItem="OXo-Cv-7jH" secondAttribute="centerY" id="lan-HD-0sY"/>
+                            <constraint firstItem="D2o-Fb-DzS" firstAttribute="leading" secondItem="OXo-Cv-7jH" secondAttribute="leading" id="pYY-rw-8Cr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lAq-yB-RqG" secondAttribute="trailing" constant="-20" id="qEc-Qp-J8q"/>
+                            <constraint firstItem="wA7-Li-WjB" firstAttribute="top" secondItem="rEs-Ac-VY9" secondAttribute="bottom" constant="100" id="qwo-jY-JUE"/>
+                            <constraint firstItem="KLS-Dh-n2v" firstAttribute="top" secondItem="CBj-MZ-0hX" secondAttribute="bottom" id="sFg-fj-A7U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mm5-zH-TjV" secondAttribute="trailing" constant="-20" id="vNO-40-Khh"/>
+                            <constraint firstItem="wA7-Li-WjB" firstAttribute="top" secondItem="D2o-Fb-DzS" secondAttribute="bottom" id="vU4-qD-we9"/>
+                            <constraint firstItem="jFY-bA-k2F" firstAttribute="leading" secondItem="OXo-Cv-7jH" secondAttribute="leadingMargin" id="x0S-y4-8I0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Mm5-zH-TjV"/>
+                                <exclude reference="KLS-Dh-n2v"/>
+                                <exclude reference="lAq-yB-RqG"/>
+                                <exclude reference="D2o-Fb-DzS"/>
+                                <exclude reference="rEs-Ac-VY9"/>
+                                <exclude reference="jFY-bA-k2F"/>
+                                <exclude reference="hcd-eJ-6n7"/>
+                                <exclude reference="Lbz-yZ-5wT"/>
+                                <exclude reference="mAC-mI-rtB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Rja-5C-0XC"/>
+                                <exclude reference="TyX-3d-4G8"/>
+                                <exclude reference="qwo-jY-JUE"/>
+                                <exclude reference="vU4-qD-we9"/>
+                                <exclude reference="Edf-gO-bpg"/>
+                                <exclude reference="eok-MU-3ca"/>
+                                <exclude reference="pYY-rw-8Cr"/>
+                                <exclude reference="T8Y-dT-9v7"/>
+                                <exclude reference="vNO-40-Khh"/>
+                                <exclude reference="I5g-VT-J3j"/>
+                                <exclude reference="qEc-Qp-J8q"/>
+                                <exclude reference="HQk-l6-sdB"/>
+                                <exclude reference="Hrz-xa-nql"/>
+                                <exclude reference="WoG-k0-OMi"/>
+                                <exclude reference="gPf-uU-pJr"/>
+                                <exclude reference="C4e-Eg-beF"/>
+                                <exclude reference="cC6-Oc-PdU"/>
+                                <exclude reference="kmx-dK-ZLK"/>
+                                <exclude reference="lan-HD-0sY"/>
+                                <exclude reference="0TG-pG-WFk"/>
+                                <exclude reference="Nem-GT-OKt"/>
+                                <exclude reference="ZVJ-YY-Kgd"/>
+                                <exclude reference="QAZ-2U-v6b"/>
+                                <exclude reference="sFg-fj-A7U"/>
+                                <exclude reference="0XF-TW-Zxg"/>
+                                <exclude reference="gek-BU-adK"/>
+                                <exclude reference="hxV-7q-Vye"/>
+                                <exclude reference="Lnq-Po-TSw"/>
+                                <exclude reference="x0S-y4-8I0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="lAq-yB-RqG"/>
+                                <include reference="jFY-bA-k2F"/>
+                                <include reference="hcd-eJ-6n7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="TyX-3d-4G8"/>
+                                <include reference="I5g-VT-J3j"/>
+                                <include reference="qEc-Qp-J8q"/>
+                                <include reference="HQk-l6-sdB"/>
+                                <include reference="Hrz-xa-nql"/>
+                                <include reference="WoG-k0-OMi"/>
+                                <include reference="gPf-uU-pJr"/>
+                                <include reference="Lnq-Po-TSw"/>
+                                <include reference="x0S-y4-8I0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="D2o-Fb-DzS"/>
+                                <include reference="Lbz-yZ-5wT"/>
+                                <include reference="mAC-mI-rtB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="vU4-qD-we9"/>
+                                <include reference="Edf-gO-bpg"/>
+                                <include reference="eok-MU-3ca"/>
+                                <include reference="pYY-rw-8Cr"/>
+                                <include reference="C4e-Eg-beF"/>
+                                <include reference="cC6-Oc-PdU"/>
+                                <include reference="kmx-dK-ZLK"/>
+                                <include reference="lan-HD-0sY"/>
+                                <include reference="0XF-TW-Zxg"/>
+                                <include reference="gek-BU-adK"/>
+                                <include reference="hxV-7q-Vye"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="Mm5-zH-TjV"/>
+                                <include reference="KLS-Dh-n2v"/>
+                                <include reference="rEs-Ac-VY9"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Rja-5C-0XC"/>
+                                <include reference="qwo-jY-JUE"/>
+                                <include reference="T8Y-dT-9v7"/>
+                                <include reference="vNO-40-Khh"/>
+                                <include reference="0TG-pG-WFk"/>
+                                <include reference="Nem-GT-OKt"/>
+                                <include reference="ZVJ-YY-Kgd"/>
+                                <include reference="QAZ-2U-v6b"/>
+                                <include reference="sFg-fj-A7U"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="Ji0-n9-zQF" id="6xA-03-BJS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a88-7i-dfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2671.5" y="-471"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3L9-xe-kIj"/>
+        <segue reference="SuR-r4-h4r"/>
+        <segue reference="fNx-41-GIe"/>
+        <segue reference="gRx-oU-PCa"/>
+    </inferredMetricsTieBreakers>
+</document>
