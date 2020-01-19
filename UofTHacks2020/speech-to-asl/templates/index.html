@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+<form action="." name="record" method="post" enctype="multipart/form-data">
+    <div id="Speaker">
+        <div id="controls">
+            <button id="recordButton">Record</button>
+            <button id="pauseButton" disabled>Pause</button>
+            <button id="stopButton" disabled>Stop</button>
+        </div>
+        <div id="formats">Format: start recording to see sample rate</div>
+        <h3>Recordings</h3>
+        <ol id="recordingsList"></ol>
+
+    </div>
+    <div id="Signer">
+        YEEEEEEEEEEEEEEEEEEEEEET
+    </div>
+    <div>
+        <button id="clickMe">Switch to Signer Mode</button>
+    </div>
+    <div id="demo">Check</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="/static/app.js"></script>
+</form>
+</body>
+</html>
