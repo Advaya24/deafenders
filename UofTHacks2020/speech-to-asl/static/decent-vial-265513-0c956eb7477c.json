@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "decent-vial-265513",
+  "private_key_id": "0c956eb7477c9b405507fbdcfb6027d844f7904e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbqbvld1wyva3R\nZbfNSDfijCaoW4gL71Okr+wSFxepMT34ZnZ0qSBsMsQQf8bmHX7UB0eTgbt79ivg\n8/BSbeO6FHZVsEcmieRwuygmlYQK8PrQ7mmHAcAhxu7udpYX/zPuJMmAVk4/B+su\n698CgWOLZLpGhWqmk4D++toHGR1mQ1Zy273XGAjWzrTnGKevfPFc0OxZBOx9aSib\nLOL24zqa5276M3JJK3qQ9kLHwlTX5aq3CZjP+IPdtK/OlkC7nU1EKj+d5xWrxlZQ\nL0Imq1i0sHWf0twsHAEI2dhYWuMw6Wr7ioZk4t/4rcm84eNlF79IYXo4kHksYyQM\nj4cSQXTzAgMBAAECggEAH3e+GMK63DUVDNYrxG97gKxFalZql8MPXSUFK5kIevcN\n6IfKHYZNHCJdGVrDWiSPTYyVLyAURxh6QVT++aLmXOkjDOqAT62jhRiIotgp485Y\nXeE8awLzFMDy7zkA2aQJGvTL2UpZMgvHQuqC4C5I8dZwg64X48nA04rhhXrRwyi7\nzsWCuUfoWKOcmPIil9/3zp0pU/8MG1xgODimE/0+D9oj+cqSotCt75SD+Atj0FLq\nrd4fhzSDSsdDcygxMsc+KmodaLSgKUqA1FAcMNbpDvNkx5QDTDGwSPFpaJqZNODq\n16pENmMOakQX2/vuA/oiCzegq8dMQj5WiL/QyyGPIQKBgQDVZkWPPRnxUnvKIR0R\nMhUa/MCIt1D5JBje0pHYLLSj+ew7Q4qhomYTgLubFDVj8xatS6UcVLbO6HMji0ft\nwv0+D1HXFrO9is7FIPZpkhj83MOob2tavliOaXc6Zdm5LIHIqmxl2oYRKPrBb6aU\naeFDKxI7V4l9l2NPjWaNmxvQkwKBgQC6vNqiNvg3GW4g/hAoB7Lf4WwMdnrb5IG7\n7B+tv0SbHCRLqmXpJ7T+GJ3AeOOKHGVtuoYXQvVfI6PDEvAZPBybRAcbCXSyb6gU\ncuHr89xglIv9N3/2DtvuKUoM/HwV+tF4oEMpcgUku/X29TXIPAxP5ZaqVfD7nDbv\nCPvdPstmIQKBgQDGDZ0RS4wARKVO+1yW0Px1h47JVBl6oN3UL2ncT+F3LkTo286W\nJLrH7vou+5pxoPKy8znSCW2AqovxuRqQuB+AsYcrMI6wo1sz6VvIrycxx1JvyLjC\nB1b5FTjqogxnp77sFf90qFM1KetQC+d2Zq4CQL8zBBM+1Hn/IyTC1+oAsQKBgASL\nchq+kb3tjYOaC1SeE1lliBapj4XogsvLDF5TKF1KCwwYYpCRGdORT82OY6NJ26IX\nBwpr48LkAClQPa2vi9aviii7Sy7IjuOohB0U+0kSdHG+NwwLAolCUf4M6wwx5YU1\nCU1p6/wf4vWWtC9iXr5XDRqqKspE3AVnR5Hz5ElhAoGAPmsDejtcTb1U3pGXkcsZ\nHVHgo/5HMoorqGL383z+q896crdGXkxSw1xy43iZB5ebWoqXIgJbVVdJfMln0aaU\nxpM/WL2ONxhmu9zQ4pixEu9Me8rwmSSOhQUEFi77qf9oAZomL9XOCcbMRPUv+WG1\nsSozlIPnX6UPKpzvR2Xil1c=\n-----END PRIVATE KEY-----\n",
+  "client_email": "speechtotext@decent-vial-265513.iam.gserviceaccount.com",
+  "client_id": "109326076144059551060",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speechtotext%40decent-vial-265513.iam.gserviceaccount.com"
+}
