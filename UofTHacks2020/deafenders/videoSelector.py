@@ -1,7 +1,7 @@
 import cv2
 import os.path
 import ffmpy
-
+import time
 
 class VideoSelector:
     def __init__(self):
@@ -17,11 +17,12 @@ class VideoSelector:
         return final_string
 
 
-if __name__ == '__main__':
-    # print(bcp47.languages.keys())
+def generate_video(input_str) -> list:
     video = VideoSelector()
-    word_list = video.convert_string("Hello! how are you goodbye! what")
+    word_list = video.convert_string(input_str)
     video_list = []
+    if os.path.isfile('static/images/video.mp4'):
+        os.remove('static/images/video.mp4')
     for word in word_list:
         path = "static/images/" + word + ".mp4"
         if os.path.isfile(path):
@@ -57,6 +58,13 @@ if __name__ == '__main__':
             ff.run()
             os.rename('video.mp4', 'static/images/video.mp4')
             os.remove('video.avi')
+            time.sleep(1)
+            video_list.append(image_folder + 'video.mp4')
+    return video_list
+
+# if __name__ == '__main__':
+#     # print(bcp47.languages.keys())
+#
             # os.popen(
             #     "ffmpeg -i '{input}' -ac 2 -b:v 2000k -c:a aac -c:v libx264 -b:a 160k -vprofile high -bf 0 -strict experimental -f mp4 '{output}.mp4'".format(
             #         input="static/images/video.avi", output="static/images/video2.mp4"))
