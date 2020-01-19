@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UofTHacks VII</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+<form action="." name="record" method="post" enctype="multipart/form-data" style="">
+    <div class="grid-container">
+        <div class="grid-item-record">
+            <button id="recordButton">Record</button>
+        </div>
+        <div class="grid-item-reset">
+            <button id="resetButton" style="background: red">Reset</button>
+        </div>
+        <div class="grid-item-pause">
+            <button id="pauseButton" disabled>Pause</button>
+        </div>
+        <div class="grid-item-submit">
+            <form action="." name="record" method="post" enctype="multipart/form-data">
+                <button id="submitButton" disabled>Submit</button>
+            </form>
+        </div>
+        <div class="grid-item-text" id="text">
+            THIS WILL CONTAIN TRANSLATION I SWEAR
+        </div>
+        <div class="grid-item-video">
+            <video id="video" autoplay muted>
+                <source id="video_source" src="/static/hello.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="grid-item-recordings">
+            <h3>Recordings</h3>
+            <ol id="recordingsList"></ol>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+{#    <script src="/static/script.js"></script>#}
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="/static/app.js"></script>
+</form>
+</body>
+</html>
