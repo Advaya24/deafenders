@@ -213,6 +213,67 @@ function createDownloadLink(blob) {
         }).done(function (res) {
             document.getElementById("text").innerHTML = res.transcript;
             console.log(res.transcript);
+
+        });
+
+        $.ajax({
+            url: /vids/
+        }).done(function (res) {
+            console.log('res: ' + res);
+            // var source = document.createElement('source');
+            //
+            var i = 0, last_i = -1;
+            // while (i < res.vids.length) {
+            //     // vid.load();
+            //     function myHandler() {
+            //         i++;
+            //     }
+            //     if (last_i !== i) {
+            //         console.log('last_i: ' + last_i);
+            //         console.log('i: ' + i);
+            //         let vid = document.getElementById("video");
+            //         vid.addEventListener('ended', myHandler, false);
+            //         console.log("i: " + res.vids[i]);
+            //         let src = res.vids[i];
+            //         vid.src = '/' + src.toString();
+            //         console.log(vid.src);
+            //         vid.play();
+            //     }
+            //
+            //     last_i = i;
+            // }
+            for (var i in res.vids) {
+                let vid = document.getElementById("video");
+                    // vid.addEventListener('ended', myHandler, false);
+                console.log("i: " + res.vids[i]);
+                let src = res.vids[i];
+                vid.src = '/' + src.toString();
+                console.log(vid.src);
+                vid.play();
+                vid.stop();
+            }
+            // let vid = document.getElementById("video");
+            // var activeVideo = 0;
+            //
+            // vid.addEventListener('ended', function (e) {
+            //     // update the new active video index
+            //     activeVideo = (++activeVideo) % res.vids.length;
+            //
+            //     // update the video source and play
+            //     vid.src = res.vids[activeVideo];
+            //     vid.play();
+            // });
+            // source.setAttribute('src', 'static/images/video.mp4');
+            // console.log('res.vids: ' + res.vids['vids'].toString().split());
+            // console.log('type: ' + typeof res.vids['vids']);
+            // for (let src in res.vids['vids']) {
+            //     console.log('src: ' + src);
+            //     // vid.setAttribute('src', src.toString());
+            //     vid.src = '/' + src.toString();
+            //     console.log(vid.src);
+            //     vid.play();
+            // }
+
         });
     });
 
@@ -221,4 +282,12 @@ function createDownloadLink(blob) {
 
 function returnVars() {
 
+}
+
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+        currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
 }

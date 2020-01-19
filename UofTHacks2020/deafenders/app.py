@@ -6,6 +6,7 @@ from google.cloud.speech import enums
 from google.cloud.speech import types
 import os
 from google.oauth2 import service_account
+from videoSelector import generate_video
 
 
 credentials = service_account.Credentials.from_service_account_file(
@@ -16,10 +17,11 @@ CORS(app)
 client = speech.SpeechClient(credentials=credentials)
 
 transcript_lst = ['']
+global_dict = {'vids': []}
 
 @app.route('/', methods=['GET'])
 def hello_world():
-    return render_template('index.html', transcript=transcript_lst[0]), 200
+    return render_template('index.html', transcript=transcript_lst[0], vids=global_dict), 200
 
 
 @app.route('/', methods=['POST'])
@@ -39,7 +41,10 @@ def hello_world_post():
         transcript = result.alternatives[0].transcript
         print('Transcript: {}'.format(result.alternatives[0].transcript))
         transcript_lst[0] = transcript
-    return render_template('index.html', transcript=transcript_lst[0]), 200
+
+    global_dict['vids'] = generate_video(transcript_lst[0])
+    print(global_dict['vids'])
+    return render_template('index.html', transcript=transcript_lst[0], vids=global_dict), 200
 
 
 @app.route('/transcript/')
@@ -48,6 +53,12 @@ def get_transcript():
         'transcript': transcript_lst[0]
     })
 
+@app.route('/vids/')
+def get_vids():
+    # return json.jsonify({
+    #     'vids': global_dict
+    # })
+    return {'vids': global_dict['vids']}
 
 if __name__ == '__main__':
     app.run(debug=True)
