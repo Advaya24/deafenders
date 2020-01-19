@@ -12,11 +12,20 @@ let audioContext; //audio context to help us record
 let recordButton = document.getElementById("recordButton");
 let stopButton = document.getElementById("stopButton");
 let pauseButton = document.getElementById("pauseButton");
+let resetButton = document.getElementById("resetButton");
+
 
 //add events to those 2 buttons
 recordButton.addEventListener("click", startRecording);
 stopButton.addEventListener("click", stopRecording);
 pauseButton.addEventListener("click", pauseRecording);
+resetButton.addEventListener("click", reset);
+
+function reset(){
+    document.getElementById("recordingsList").innerHTML = "";
+    document.getElementById("video").style.visibility = "hidden";
+    document.getElementById("text").innerHTML = "";
+}
 
 function startRecording() {
     console.log("recordButton clicked");
