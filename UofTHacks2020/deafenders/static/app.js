@@ -21,7 +21,7 @@ submitButton.addEventListener("click", stopRecording);
 pauseButton.addEventListener("click", pauseRecording);
 resetButton.addEventListener("click", reset);
 
-function reset(){
+function reset() {
     document.getElementById("recordingsList").innerHTML = "";
     document.getElementById("video").style.visibility = "hidden";
     document.getElementById("text").innerHTML = "";
@@ -203,8 +203,22 @@ function createDownloadLink(blob) {
         processData: false,
         contentType: false
     }).done(function (data) {
+        setTimeout(function () {
+            //do what you need here
+        }, 5000);
         console.log("Hello " + data);
         // document.record.submit();
+        $.ajax({
+            url: /transcript/
+        }).done(function (res) {
+            document.getElementById("text").innerHTML = res.transcript;
+            console.log(res.transcript);
+        });
     });
+
     // console.log(i);
+}
+
+function returnVars() {
+
 }

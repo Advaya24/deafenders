@@ -1,10 +1,7 @@
 import cv2
-import numpy as np
 import os.path
-import skvideo.io
-from cv2.cv2 import ROTATE_90_CLOCKWISE
-import bcp47
-from PIL import Image
+import ffmpy
+
 
 class VideoSelector:
     def __init__(self):
@@ -24,53 +21,42 @@ if __name__ == '__main__':
     # print(bcp47.languages.keys())
     video = VideoSelector()
     word_list = video.convert_string("Hello! how are you goodbye! what")
+    video_list = []
     for word in word_list:
-        path = "ASL/" + word + ".mp4"
+        path = "static/images/" + word + ".mp4"
         if os.path.isfile(path):
-            print(word)
-            # cap = skvideo.io.vread(path)
-
-            cap = cv2.VideoCapture(path)
-
-            while (cap.isOpened()):
-
-                # Capture frame-by-frame
-                ret, frame = cap.read()
-
-                if ret == True:
-
-                    # Display the resulting frame
-                    cv2.imshow('Frame', frame)
-                    # cv2.resizeWindow('Frame', 600, 580)
-
-                    # Press Q on keyboard to  exit
-                    if cv2.waitKey(10) & 0xFF == ord('q'):
-                        break
-
-                # Break the loop
-                else:
-                    break
+            video_list.append(path)
         else:
-            image_folder = 'ASL/'
-            video_name = 'video.mp4'
+            image_folder = 'static/images/'
+            video_name = 'video.avi'
             letter_list = []
             for letter in word:
-                path = "ASl/" + letter + ".jpeg"
-                letter_list.append(path)
-            frame = cv2.imread(os.path.join(image_folder, letter_list[0]))
-            height, width, layers = frame.shape
-            video = cv2.VideoWriter(video_name, 0, 2, (width, height))
+                path2 = "static/images/" + letter + ".jpeg"
+                letter_list.append(path2)
+            # frame = cv2.imread(letter_list[0])
+            # print(frame)
+            # height, width, layers = frame.shape
+            video = cv2.VideoWriter(video_name, cv2.VideoWriter_fourcc(*'MJPG'),
+                                    2, (400, 400))
 
             for image in letter_list:
-                video.write(cv2.imread(os.path.join(image_folder, image)))
+                # cv2.imshow('image', cv2.imread(image))
+                # key = cv2.waitKey(500)
+                video.write(cv2.imread(image))
 
-            cv2.destroyAllWindows()
+            # cv2.destroyAllWindows()
+            # while(True):
+            #     continue
+            if os.path.isfile('video.mp4'):
+                os.remove('video.mp4')
             video.release()
-
-
-
-
-
-
-
-
+            ff = ffmpy.FFmpeg(
+                inputs={'video.avi': None},
+                outputs={'video.mp4': None}
+            )
+            ff.run()
+            os.rename('video.mp4', 'static/images/video.mp4')
+            os.remove('video.avi')
+            # os.popen(
+            #     "ffmpeg -i '{input}' -ac 2 -b:v 2000k -c:a aac -c:v libx264 -b:a 160k -vprofile high -bf 0 -strict experimental -f mp4 '{output}.mp4'".format(
+            #         input="static/images/video.avi", output="static/images/video2.mp4"))
