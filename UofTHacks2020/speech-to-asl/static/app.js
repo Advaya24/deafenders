@@ -10,14 +10,14 @@ let AudioContext = window.AudioContext || window.webkitAudioContext;
 let audioContext; //audio context to help us record
 
 let recordButton = document.getElementById("recordButton");
-let stopButton = document.getElementById("stopButton");
+let submitButton = document.getElementById("submitButton");
 let pauseButton = document.getElementById("pauseButton");
 let resetButton = document.getElementById("resetButton");
 
 
 //add events to those 2 buttons
 recordButton.addEventListener("click", startRecording);
-stopButton.addEventListener("click", stopRecording);
+submitButton.addEventListener("click", stopRecording);
 pauseButton.addEventListener("click", pauseRecording);
 resetButton.addEventListener("click", reset);
 
@@ -42,7 +42,7 @@ function startRecording() {
    */
 
     recordButton.disabled = true;
-    stopButton.disabled = false;
+    submitButton.disabled = false;
     pauseButton.disabled = false;
 
     /*
@@ -62,7 +62,7 @@ function startRecording() {
         audioContext = new AudioContext();
 
         //update the format
-        document.getElementById("formats").innerHTML = "Format: 1 channel pcm @ " + audioContext.sampleRate / 1000 + "kHz"
+        // document.getElementById("formats").innerHTML = "Format: 1 channel pcm @ " + audioContext.sampleRate / 1000 + "kHz"
 
         /*  assign to gumStream for later use  */
         gumStream = stream;
@@ -84,7 +84,7 @@ function startRecording() {
     }).catch(function (err) {
         //enable the record button if getUserMedia() fails
         recordButton.disabled = false;
-        stopButton.disabled = true;
+        submitButton.disabled = true;
         pauseButton.disabled = true
     });
 }
@@ -104,10 +104,10 @@ function pauseRecording() {
 }
 
 function stopRecording() {
-    console.log("stopButton clicked");
+    console.log("submitButton clicked");
 
     //disable the stop button, enable the record too allow for new recordings
-    stopButton.disabled = true;
+    submitButton.disabled = true;
     recordButton.disabled = false;
     pauseButton.disabled = true;
 

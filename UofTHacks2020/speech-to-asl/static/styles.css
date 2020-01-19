@@ -76,9 +76,7 @@ li {
     font-size: 80%;
 }
 form{
-    align-self: center;
-    width: 200%;
-    padding: 0;
+    all: none;
 }
 ol{
     width: 25em;

@@ -1,13 +1,25 @@
 from flask import Flask, render_template, request
 from flask_cors import CORS
 import simpleaudio as sa
-import ast
+from google.cloud import speech
+from google.cloud.speech import enums
+from google.cloud.speech import types
+import os
+from google.oauth2 import service_account
+
+credentials = service_account.Credentials.from_service_account_file(
+"./static/decent-vial-265513-0c956eb7477c.json")
+
 # import cgi
 # from contextlib import closing
 # import wave
 
 app = Flask(__name__)
 CORS(app)
+client = speech.SpeechClient(credentials=credentials)
+# client = speech.SpeechClient()
+# creds = service_account.Credentials.from_service_account_file("./path/credentials.json")
+# client = speech.SpeechClient(credentials=creds
 
 
 @app.route('/', methods=['GET'])
@@ -29,11 +41,25 @@ def hello_world_post():
     # print(request.data['fd'])
     # print(str(request.form))
     # print(str(request.data))
+    # credential_path = "/Desktop/Coding/UofTHacks2020/speech-to-asl/static/decent-vial-265513-0c956eb7477c.json"
+    # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
     fs_blob = request.files['data']
     file = fs_blob.stream.read()
     p = sa.play_buffer(file, 1, 2, 44100)
-    p.wait_done()
-    return 'Hello World!', 200
+    # p.wait_done()
+
+
+    audio = types.RecognitionAudio(content=file)
+    config = types.RecognitionConfig(
+        encoding=enums.RecognitionConfig.AudioEncoding.LINEAR16,
+        language_code='en-US')
+
+    # Detects speech in the audio file
+    response = client.recognize(config, audio)
+
+    for result in response.results:
+        print('Transcript: {}'.format(result.alternatives[0].transcript))
+    return render_template('abc.html'), 200
 
 
 if __name__ == '__main__':
