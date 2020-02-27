@@ -111,3 +111,9 @@ if __name__ == '__main__':
 
             cv2.destroyAllWindows()
 
+# if __name__ == '__main__':
+#     # print(bcp47.languages.keys())
+#
+            # os.popen(
+            #     "ffmpeg -i '{input}' -ac 2 -b:v 2000k -c:a aac -c:v libx264 -b:a 160k -vprofile high -bf 0 -strict experimental -f mp4 '{output}.mp4'".format(
+            #         input="static/images/video.avi", output="static/images/video2.mp4"))
