@@ -10,8 +10,10 @@ from videoSelector import generate_video
 
 
 credentials = service_account.Credentials.from_service_account_file(
-    "./static/decent-vial-265513-0c956eb7477c.json")
-
+    "./static/config.json")
+data = {}
+with open('static/config.json') as file:
+    data.update(json.load(file))
 app = Flask(__name__)
 CORS(app)
 client = speech.SpeechClient(credentials=credentials)
