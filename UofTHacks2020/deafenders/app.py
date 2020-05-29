@@ -10,7 +10,7 @@ from videoSelector import generate_video
 
 
 credentials = service_account.Credentials.from_service_account_file(
-    "./static/decent-vial-265513-0c956eb7477c.json")
+    "./static/config.json")
 
 app = Flask(__name__)
 CORS(app)
