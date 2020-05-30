@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, json
 from flask_cors import CORS
-# import simpleaudio as sa
+import simpleaudio as sa
 from google.cloud import speech
 from google.cloud.speech import enums
 from google.cloud.speech import types
@@ -9,14 +9,15 @@ from google.oauth2 import service_account
 from videoSelector import generate_video
 
 
-credentials = service_account.Credentials.from_service_account_file(
-    "./static/config.json")
-data = {}
-with open('static/config.json') as file:
-    data.update(json.load(file))
+# credentials = service_account.Credentials.from_service_account_file(
+#     "./static/config.json")
+# data = {}
+# with open('static/config.json') as file:
+#     data.update(json.load(file))
+# credentials = service_account.Credentials.from_service_account_file()
 app = Flask(__name__)
 CORS(app)
-client = speech.SpeechClient(credentials=credentials)
+client = speech.SpeechClient()
 
 transcript_lst = ['']
 global_dict = {'vids': []}
@@ -45,7 +46,7 @@ def hello_world_post():
         transcript_lst[0] = transcript
 
     global_dict['vids'] = generate_video(transcript_lst[0])
-    print(global_dict['vids'])
+    print("Videos: " + str(global_dict['vids']))
     return render_template('index.html', transcript=transcript_lst[0], vids=global_dict), 200
 
 
