@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, json
 from flask_cors import CORS
-import simpleaudio as sa
+# import simpleaudio as sa
 from google.cloud import speech
 from google.cloud.speech import enums
 from google.cloud.speech import types
@@ -30,7 +30,7 @@ def hello_world():
 def hello_world_post():
     fs_blob = request.files['data']
     file = fs_blob.stream.read()
-    sa.play_buffer(file, 1, 2, 44100)
+    # sa.play_buffer(file, 1, 2, 44100)
 
     audio = types.RecognitionAudio(content=file)
     config = types.RecognitionConfig(
