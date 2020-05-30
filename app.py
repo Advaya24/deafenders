@@ -14,10 +14,12 @@ from videoSelector import generate_video
 # data = {}
 # with open('static/config.json') as file:
 #     data.update(json.load(file))
-# credentials = service_account.Credentials.from_service_account_file()
+
+creds = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
+credentials = service_account.Credentials.from_service_account_info(creds)
 app = Flask(__name__)
 CORS(app)
-client = speech.SpeechClient()
+client = speech.SpeechClient(credentials=credentials)
 
 transcript_lst = ['']
 global_dict = {'vids': []}
