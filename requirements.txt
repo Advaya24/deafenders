@@ -63,6 +63,7 @@ PyYAML==5.1.2
 requests==2.22.0
 requests-file==1.4.3
 rsa==4.0
+setuptools>=40.3.0
 six==1.10.0
 slate3k==0.5.3
 sortedcontainers==2.1.0
