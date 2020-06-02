@@ -205,7 +205,7 @@ function createDownloadLink(blob) {
     }).done(function (data) {
         setTimeout(function () {
             //do what you need here
-        }, 5000);
+        }, 1000);
         console.log("Hello " + data);
         // document.record.submit();
         $.ajax({
@@ -250,7 +250,6 @@ function createDownloadLink(blob) {
                 vid.src = '/' + src.toString();
                 console.log(vid.src);
                 vid.play();
-                vid.stop();
             }
             // let vid = document.getElementById("video");
             // var activeVideo = 0;
