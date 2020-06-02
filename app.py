@@ -7,6 +7,7 @@ from google.cloud.speech import types
 import os
 from google.oauth2 import service_account
 from videoSelector import generate_video
+from flask_debugtoolbar import DebugToolbarExtension
 
 
 # credentials = service_account.Credentials.from_service_account_file(
@@ -18,6 +19,9 @@ from videoSelector import generate_video
 creds = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 credentials = service_account.Credentials.from_service_account_info(creds)
 app = Flask(__name__)
+app.debug = True
+app.config['SECRET_KEY'] = 'secret'
+toolbar = DebugToolbarExtension(app)
 CORS(app)
 client = speech.SpeechClient(credentials=credentials)
 
