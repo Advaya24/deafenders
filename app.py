@@ -18,7 +18,7 @@ from videoSelector import generate_video
 
 creds = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 credentials = service_account.Credentials.from_service_account_info(creds)
-app = Flask(__name__, static_folder="/static")
+app = Flask(__name__, static_folder="./static")
 # app.debug = True
 # app.config['SECRET_KEY'] = 'secret'
 # toolbar = DebugToolbarExtension(app)
